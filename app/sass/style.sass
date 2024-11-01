@@ -8,6 +8,8 @@ body
     color: #fff
     font-weight: 400
     background: $bg-color
+    margin: 0 
+    padding: 0
 .container 
     width: 91.957vw
     margin-left: auto 
@@ -23,6 +25,9 @@ body
     span 
         display: block
         color: $blue
+h1 
+    margin-top: 0 
+    margin-bottom: 0
 .h2 
     font-size: 10.724vw
     font-weight: 700
@@ -286,6 +291,228 @@ p
     .button 
         width: 100%
 //end fixed button 
+
+//start get vip style
+.get-vip .header
+    background: $gradient
+    padding-top: 20px 
+    padding-bottom: 29px
+    margin-bottom: 29px
+    text-align: center
+.get-vip .logo
+    display: block 
+    margin-left: auto 
+    margin-right: auto
+    text-decoration: none
+    width: 100%
+    font-style: italic
+    img 
+        width: 36px 
+.get-vip .logo a 
+    text-decoration: none
+.get-vip 
+    h1 
+        font-size: 32px 
+        color: #fff 
+        text-decoration: none
+.premium-wrapper
+    h2 
+        text-align: center
+        margin-top: 0 
+        margin-bottom: 0
+        font-size: 30px 
+        font-weight: 800
+        font-style: italic
+        line-height: 1
+        margin-bottom: 20px
+.sub-title
+    text-align: center
+    font-size: 18px
+    font-weight: 600
+    margin-bottom: 30px
+.list-title
+    font-size: 18px
+    font-weight: 800
+    margin-bottom: 16px
+.premium__list
+    margin-left: 0
+    padding-left: 0
+    list-style: none
+    padding-bottom: 100px
+    li 
+        font-size: 18px 
+        font-weight: 600 
+        padding-left: 25px
+        padding-top: 8px 
+        padding-bottom: 8px
+        position: relative
+    li:before 
+        content: ''
+        position: absolute 
+        top: 12px
+        left: 0 
+        width: 16px 
+        height: 16px 
+        background-color: #F16025
+        background-image: url('../img/tick.svg')
+        background-repeat: no-repeat 
+        background-position: center
+        border-radius: 50%
+.next-button-wrapper
+    position: fixed 
+    bottom: 32px
+    left: 0 
+    width: 100%
+    .button 
+        width: 91.467vw
+        border-radius: 12px
+        background: $gradient
+        color: #fff
+        a 
+            color: #fff 
+            text-decoration: none
+.title-text
+    font-size: 30px 
+    line-height: 1
+    font-weight: 800
+    font-style: italic
+    margin-bottom: 20px
+    display: block
+//end get vip style
+
+//start plans style
+.content__header-text
+    text-align: center 
+    margin-left: auto 
+    margin-right: auto
+.content__header:nth-child(2)
+    display: flex 
+    justify-content: center
+.content__header:nth-child(2) .content__header-text
+    background: #fff
+    color: $orange
+    font-size: 18px 
+    font-weight: 900
+    padding: 7px 16px
+    border-radius: 30px
+    margin-bottom: 30px
+.get-vip .item 
+    background: #fff
+    border-radius: 10px
+    padding: 13px 16px
+    color: #0E0B07
+    position: relative
+    font-size: 18px 
+    font-weight: 600
+    margin-bottom: 28px
+.get-vip .item .best-price
+    position: absolute 
+    top: 0 
+    right: 16px
+    background: #F16025
+    color: #fff
+    transform: translateY(-50%)
+    font-size: 12px 
+    font-weight: 600
+    padding: 5px 10px
+    padding-top: 3px 
+    padding-bottom: 4px
+    border-radius: 4px
+    line-height: 1
+.get-vip .item__footer
+    position: absolute 
+    bottom: 0 
+    left: 0
+    color: #fff
+    transform: translateY(115%)
+    font-size: 12px
+.get-vip
+    .item__content-footer
+        display: flex 
+        justify-content: space-between
+        margin-top: 3px
+    .items-list
+        margin-bottom: 70px
+.item__price
+    font-weight: 700 
+.old-price 
+    text-decoration: line-through
+.get-vip .item.active
+    background: #F16025 
+    color: #fff
+    .best-price
+        background: #fff
+        color: #F16025
+.cancle-link 
+    text-align: center
+    margin-left: auto 
+    margin-right: auto
+    display: block
+    margin-top: 23px
+    color: rgba(#FEFAF5, 0.5)
+    font-weight: 900
+    text-decoration: none
+.payment-complete
+    .premium__list
+        display: flex
+        justify-content: space-between
+        position: relative
+        padding-bottom: 0
+    .premium__list li:before
+        display: none
+    .premium__list li
+        padding: 0
+        background: #F16025
+        width: 48%
+        text-align: center 
+        justify-content: center 
+        align-items: center
+        display: flex
+        height: 143px
+        font-size: 22px
+        font-weight: 800
+        border-radius: 8px
+.plus 
+    width: 40px
+    height: 40px 
+    background: #fff 
+    border-radius: 50%
+    position: absolute 
+    top: 50% 
+    left: 50% 
+    transform: translateY(-50%) translateX(-50%)
+    z-index: 2
+    color: $orange
+    display: flex 
+    justify-content: center 
+    align-items: center
+    img 
+        width: 16px
+.discount
+    display: flex 
+    justify-content: space-between
+    align-items: center
+    width: 100%
+    font-size: 17px
+.discount__value
+    display: flex 
+    align-items: center
+    justify-content: flex-end
+    width: 100%
+.discount__value
+    font-size: 18px
+    .through 
+        color: #fff
+        opacity: 0.5
+        text-decoration: line-through
+        margin-right: 14px
+    span 
+        color: $orange
+.title-m 
+    text-align: center
+    font-size: 18px 
+    margin-bottom: 23px
+//end plans style
 
 @import "media"
 
